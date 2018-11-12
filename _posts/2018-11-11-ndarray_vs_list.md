@@ -10,7 +10,7 @@ author: jaekwang
 description: numpy array와 기본 array의 차이점.
 ---
 
-##ndarray vs. list 차이점
+## ndarray vs. list 차이점
 
 ### 차이점
 * list의 element는 가변적이나 ndarray의 element는 type과 shape이 같아야한다.
