@@ -24,11 +24,12 @@ description: saver를 이용한 model의 가중치 저장.
   1. ckpt = tf.train.get_checkpoint_state(checkpoint_dir)
      save할때 checkpoint state protocol buffer를 checkpoint 파일에 저장하는데
      checkpoint stae protocol buffer에는
-     1. model_chechpoint_path :  가장 최근 가중치 파일의 path 정보
+     * model_chechpoint_path :  가장 최근 가중치 파일의 path 정보
         - 이용 ckpt.model_checkpoint_paths -> return saved/train2-9   
-     2. all_model_checkpoint_paths : 모든 path
+     * all_model_checkpoint_paths : 모든 path
         - 이용 ckpt.all_model_checkpoint_paths -> return [saved/train2-5, saved/train2-6, saved/train2-7]
- 2.  
+ 2.  _
+
  ```
   if ckpt and ckpt.model_checkpoint_path: #가장최근에 ckpt파일에 접근한다.
     ckpt_name = os.path.basename(ckpt.model_checkpoint_path) #입력받은 경로의 기본 이름을 반환한다.
