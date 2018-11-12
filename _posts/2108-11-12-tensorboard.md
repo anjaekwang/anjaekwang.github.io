@@ -1,7 +1,7 @@
 ---
 title: "Tensorfboard usage"
 layout: post
-date: 2018-11-12 10:25222255555555555555
+date: 2018-11-12 10:41
 tag:
 - tensorflow
 - notes
@@ -15,7 +15,7 @@ description: tensorboard usage
 
 
 ### weight 와 bias에 summary 작성, 틀
-~~~
+ ```
 with tf.name_scope("layer1") as scope: #tensorboard 의 도형 만들어냄.
     w1 = tf.get_variable("w1", shape=[3,3,1,5],initializer=tf.contrib.layers.xavier_initializer())
     b1 = tf.get_variable("b1", shape=[5],initializer=tf.contrib.layers.xavier_initializer())
@@ -25,12 +25,12 @@ with tf.name_scope("layer1") as scope: #tensorboard 의 도형 만들어냄.
     w1_hist = tf.summary.histogram("weights1", w1) #histogram이 아닌 scalar 경우 tf.summary.scalar
     b1_hist = tf.summary.histogram("biases1", b1)
     layer1_hist = tf.summary.histogram("layer1", conv1)
-~~~
+ ```
 
 -  즉 with ..as scope 는 도형을 만들어내고 summary 써야 그래프 나옴
 
 ### Session을 열고 summary를 log파일로 작성하기
-~~~
+ ```
   1) merged_summary = tf.summary.merge_all() #summary들을 합침
   2) writer = tf.summary.FileWriter(summ_dir) #log파일생성
   3) writer.add_graph(sess.graph)  # Show the graph # 그래프 그려주고
@@ -38,7 +38,7 @@ with tf.name_scope("layer1") as scope: #tensorboard 의 도형 만들어냄.
   4)summary = sess.run(merged_summary ) -> train 돌릴때 같이
   5) writer.add_summary(summary, global_step=epoch)
    # 학습함에따라 변화대는 log를 보는것이므로 학습되어지는 라인에 작성해줘야함 global_step 은 그 때마다 log를 기록해줌
-~~~
+ ```
 
 
 ## log 보는 방법
