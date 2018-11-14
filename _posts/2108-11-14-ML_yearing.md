@@ -1,7 +1,7 @@
 ---
-title: "Machine Learning Yearing - ANDREW NG (작성중입니다.)"
+title: "Machine Learning Yearing - ANDREW NG"
 layout: post
-date: 2018-11-14 10:41
+date: 2018-11-14 11:39
 tag:
 - tensorflow
 - notes
@@ -11,13 +11,16 @@ description: Machine Learning Yearing - ANDREW NG 요약
 ---
 
 ## Machine Learning Yearing
-**[Machine Learning Yearing 책을 읽으며 개인적으로 받아들인 내용을 요약한 글입니다.]()**
+**Machine Learning Yearing 책을 읽으며 개인적으로 받아들인 내용을 요약한 글입니다.**
 
 ML에서 어떠한 문제를 해결하기 위해 modeling - 관찰 - 수정 와 같이 일련의 과정을 반복적으로
 이뤄진다. 이러한 과정에서 어떠한 모델이 더 좋을까에 대한 **metric** 이 필요하다.
+
 ![loop](../assets/images/ML_yearing/loop.PNG)
 
 **빠르게 간단한 시스템을 개발 -> 학습 -> 어떻게 동작했는지 관찰(Error analysis)**
+
+
 
 ### Data set
 
@@ -48,5 +51,48 @@ data를 5(k)개로 나눈 다음 (각각을 fold라 부름)
 metric이라 부른다.
 metric에는 accuracy가 많이 사용되고 그다음으로 ROC Curve와 Precision Recall Plot,
 F-score등이 많이 사용된다.
+![information_theory](../assets/images/ML_yearing/3.PNG)
 
+- Acc : (TP + TN) / (P + N)  (전체중에 제대로 예측한 비율.)
+- Error rate : (FP + FT) / (P + N) (전체중에 잘못 예측한 비율.)
+- Sensitivy(= recall, TPR) : TP / (TP + FN) (실제 P중 제대로 P로 예측한 비율.)
+- Specificity(특이도) : TN / (FP + TN) (실제 N중 N으로 예측한 비율.)
+- Precision(PREC, 정확율) : TP / (TP + FP) (P로 예측한 것중 실제로 P인 비율.)
+** FPR(False Positive Rate) : 1-Specificity
+** TPR(True Positive Rate) : Sensivity
 ### - ROC Curve
+![ROC_curve](../assets/images/ML_yearing/4.jpg)
+
+- A 모델 일수록 model의 성능이 좋다.
+- AUL (area under the curve)  넓을수록 좋다.
+
+##### ** 복수 지표를 가져야 할때 한개의 지표로 만들어준다
+~~ex) 이거 있는데 까먹었ㅇ.ㅏㅓㄴㅇ라ㅓㄴㅇㄹ 다시 공부하고 올리기 미ㅓㅏㄴ~~
+
+##Error analysis
+맨 윗사진의 루프를 돌때 방향성을 잡는다.
+
+1. dev set 잘못 분류 한걸 수작업 으로 오류 분류
+![Error](../assets/images/ML_yearing/5.PNG)
+
+표를 만들고 해당 오차를 해결하면 전체 성능 얼마나 좋아질지 생각해보고 방향수정
+
+만약 dev가 너무많아 분석 어려울땐?
+dev set의 10%를 eyeball dev set 으로 두고 한다.
+나머지 90%는 black dev set ->이걸로 파라미터 조정
+~~이것도 수정 필요~~
+
+### 편향과 분산
+
+- 편향 : Train 의 에러율
+- 분산 : dev/test가 train에 비해 얼마나 나쁜지
+편향과 분산은 딜레마를 가지고 있다.
+
+- Overfiting : 편향 낮으나 분산이 높다, Train set -> good,  dev/test -> bad
+- Underfiting : 편향 높으나 분산이 낮다.
+
+편향이 높아? -> 더깊게 모델을 만든다 -> 오버피팅주의! -> 정규화, dropout으로 막자.
+분산이 높아? -> Train set 추가 (편향에 영향 안준다.)
+
+![img](../assets/images/ML_yearing/6.PNG)
+~~뒷부분 공부해서 올리기~~
