@@ -27,13 +27,13 @@ description: 지식표현과 추론 정리
 ![img](../assets/images/KnowledgeExpressionAndInference/2.PNG)
 
 **인스턴스 표현**
-![img](../assets/images/KnowledgeExpressionAndInference/3.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/3.png)
 
 ## 2. 논리
 **논리** : 문장을 기호로 표현하고 조작을 통해 참 or 거짓을 판정하는 분야.
 **명제** : 참 거짓을 분명하게 판정할 수 있는 문장, 한개 기호로 표현, 진리값 사용.
 **기본명제, 복합명제** : 복합 명제는 and or로 연결된 명제
-![img](../assets/images/KnowledgeExpressionAndInference/4.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/4.png)
 **리터럴** : 명제기호 or ㄱ명제기호 (한개)
 **절** : 논리곱, 논리합 으로 연결
 **논리곱 정규형 CNF** : 논리합들이 곱으로 연결 됨
@@ -81,13 +81,13 @@ p(전제)->(함의) q(결론)
 1. 구성적 증명 : 공리들에 추론 규칙들을 적용하여 증명을 만들어 보이는 증명
 2. 논리융합 반박 : 정리를 부정하여 이를 이용해 부정한 정리와 공리를 논리 융합
 false임을 보이면서 정리가 참임을 보인다.
-![img](../assets/images/KnowledgeExpressionAndInference/9.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/9.png)
 
 ## 3. 술어논리
 변수,함수에 따라 참거짓을 결정한다. 술어가 서술어에 해당.
 **한정사** : 변수 대상의 범위를 표현
 
-![img](../assets/images/KnowledgeExpressionAndInference/11.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/11.png)
 **함수** : 술어의 인자로 사용한다. 참거짓값이 아니라 일반적인 값을 나타낸다  예를 들어 h(x,f(x))
 **항** : 함수의 인자가 될수 있는것, 개체상수(Adam), 변수(x), 함수(f(x))
 **일차 술어 논리** : 변수에만 한정사 쓸수 있게 한 논리
@@ -101,22 +101,22 @@ CNF로 변환후 논리융합 반박을 통해 증명을 한다.
 - 어떤 원숭이는 지능적이다
 - 지능적이어도 문맹일 수 있다. **이를 증명해야함**
 
-![img](../assets/images/KnowledgeExpressionAndInference/13.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/13.png)
 
 
 1. 한정사를 없앤다 (술어를 만족시키는 것을ㄱ, **논리합** 으로 변환)
 전칭한정사 경우 그저 한정사를 없애면 되고 존재한정사 경우
 술어에 변수가 단독인경우 특정 상수 A를 대입하고 다른변수와 있을경우
 스콜렛 함수(x에대해서 술어를 참으로 만족 시키는 y를 찾는 함수)를 도입한다.
-![img](../assets/images/KnowledgeExpressionAndInference/12.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/12.png)
 
-![img](../assets/images/KnowledgeExpressionAndInference/14.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/14.png)
 
 2. 단일화 과정 : 리터럴이 같아지도록 변수의 값을 맞춘다.
 ex) ㄱKnow(John, x) V Hate(John, x) , Know(John, jim)을 논리융합 할때
 Know의 리터럴이 같도록 x에 jim을 대입 Hate(john, jim) 이 된다.
 
-![img](../assets/images/KnowledgeExpressionAndInference/15.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/15.png)
 
 **논리 프로그래밍 언어**
 Horn절 : 논리식을 논리합 형태로 표현할때 ㄱA(x) v ㄱB(x) v c(x) 와 같이
@@ -126,7 +126,7 @@ Horn절 : 논리식을 논리합 형태로 표현할때 ㄱA(x) v ㄱB(x) v c(x)
 
 prolog : Horn 절만 허용하는 논리 프로그래밍 언어
 
-![img](../assets/images/KnowledgeExpressionAndInference/16.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/16.png)
 
 
 ## 4. 의미망
@@ -134,7 +134,7 @@ prolog : Horn 절만 허용하는 논리 프로그래밍 언어
 **노드** : 항(대상,개념, 보통 명사)
 **간선(Edge)** : 관계에 따른 방향성을 가지며, 관계의미 라벨 부여. (보통 서술어)
 
-![img](../assets/images/KnowledgeExpressionAndInference/17.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/17.png)
 
 **is-a 관계** : 상위클래스와 하위클래스, 클래스와 객체를 표현 (2항이 1항을 포괄함)
 ex) 사자 ->(is-a) 포유류, is-a(사자,포유류)
@@ -146,12 +146,12 @@ is와 has 모두 추이적 관계를 만족시킨다
 **다항관계 표현** : 의미망은 이항관계만 표시하기에 다항관계의 지식은 관계(서술어)를
 객체로 간주하여 표현 (즉, 동사를 사물화(객체))
 
-![img](../assets/images/KnowledgeExpressionAndInference/18.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/18.png)
 
 **추론**
 상속이용 따라가서 값을 찾아낸다. 단 가장 가까운 값 가져온다
 예를 들어 펭귄은 알을 낳는가? 질문이 있을때  is-a관계 간선을 따라 질문을 찾아감
-![img](../assets/images/KnowledgeExpressionAndInference/19.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/19.png)
 
 **새로운 사실 추론도 가능**
 주어진 사실로 부터 규칙의 의미망을 이용해 결론부를 추론가능
@@ -174,7 +174,7 @@ is와 has 모두 추이적 관계를 만족시킨다
 
 ## 5. 스크립트
 전형적인 상황에서 발생하는 일련의 사건을 기술하는 지식표현
-![img](../assets/images/KnowledgeExpressionAndInference/22.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/22.png)
 
 ## 6. 온톨로지
 이전에 표현 방식은 다른 system 만들때 재사용 할수 없다. (의미가 모호)
@@ -189,8 +189,8 @@ is와 has 모두 추이적 관계를 만족시킨다
 URI : 모든 대상을 고유한 식별체계룰 준다. 실제론 존재하지 않는 그냥 꼬리표
 
 abc 기관의 이메일이 인 홍길동 부장이라는 사람
-![img](../assets/images/KnowledgeExpressionAndInference/23.PNG)
-![img](../assets/images/KnowledgeExpressionAndInference/27.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/23.png)
+![img](../assets/images/KnowledgeExpressionAndInference/27.png)
 
 
 **SPARQL** : RDF 형태로 저장된 데이터에 대한 질의어
@@ -206,7 +206,7 @@ abc 기관의 이메일이 인 홍길동 부장이라는 사람
 ### 시멘틱 웹
 프로그램(소프트웨어 에이전트)이 어떤 사이트에 접근해서 그사이트의 내용을 이해하고
 필요한 정보를 가지고 오게 함 그러기 위해 각각의 정보를 기술할때 통일된 형태로 기술하자.
-![img](../assets/images/KnowledgeExpressionAndInference/29.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/29.png)
 
 의미망은 대상 관계등의 표현에 사용되는 용어가 임의적이지만
 온톨로지는 **공유와 상호운영성** 을 위해 명확학 지침에 따라 표현한다
@@ -236,7 +236,7 @@ C의 확신도는 A,B 사실에 **확신도 최대값 * 규칙의 확신도**
 **여러 규칙에 의해 추론된 사실의 확신도를 결합**
 여러 규칙에 의해 cf1(B) , cf2(B) 같은 사실에 대해 두개의 확신도를 얻었다 가정해보자.
 아래와 같이 계산한다.
-![img](../assets/images/KnowledgeExpressionAndInference/30.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/30.png)
 
 #### 베이즈 정리
 확률의미
@@ -258,7 +258,7 @@ A에대한 확률이 어떻게 변하는지 (사후 확률)
 #### 규칙의 불확실성 표현 (A->B)
 B에 대한 사전확률을 가지고 규칙에 의해  B가 추론된다면 그떄 B에 대한 확률값은 어떻게 되는지?
 
-![img](../assets/images/KnowledgeExpressionAndInference/31.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/31.png)
 
 #### 퍼지이론
 개념이나 범주가 항상 이분적이지 않기에 정도의 문제. 퍼지 집합을 이용한다.
@@ -270,15 +270,15 @@ B에 대한 사전확률을 가지고 규칙에 의해  B가 추론된다면 그
 소속함수를 이용해 언어항의 소속정도를 [0,1]로 표현한다
 
 **퍼지규칙** : 언어항을 소속함수로 표현한 규칙
-![img](../assets/images/KnowledgeExpressionAndInference/33.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/33.png)
 
 **퍼지 추론**
 
 1. 퍼지규칙에 의해 퍼지값을 계산하고
-![img](../assets/images/KnowledgeExpressionAndInference/34.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/34.png)
 
 2. 여러규칙을 통해 얻은 결과를 합집합으로 겹쳐그린다
-![img](../assets/images/KnowledgeExpressionAndInference/35.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/35.png)
 
 3. 비퍼지화 : 무게중심을 계산하여 수치값으로 바꾼다
 ![img](../assets/images/KnowledgeExpressionAndInference/36.PNG)
@@ -297,7 +297,7 @@ Probabilistic Graph Model, PGM
 이러한 불확신 요소가 있어 확률로 표현한다.
 확률변수 : 경보작동(A), 절도발생(B), 지진발생(E), 이웃전화(N)
 **결합확률 분포로 표현한다!**
-![img](../assets/images/KnowledgeExpressionAndInference/37.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/37.png)
 경보가 울릴때 이웃이 전화할 확률은 ?
 P(N=T | A=T) : 체크한것을 이용해 확률값을 계산한다.
 (확률 값은 주어짐.)
@@ -326,7 +326,7 @@ P(N,A,E,B) = P(N|A) * P(A|E,B) * P(E) * P(B)
 ### 마르코프 네트워크
 무방향성그래프, 조건부 독립이 아니라 관련된 변수간의 값들이 가질수
 있는 값의 부합정도를 가지고 확률분포를 표현
-![img](../assets/images/KnowledgeExpressionAndInference/40.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/40.png)
 0(a^0, b^0, c^0,d^0) = {0(a^0, b^0) * 0(b^0, c^0) * 0(c^0,d^0) * 0(d^0,a^0)} / 전체 조합 경우의 부합정도 합
 
 ## 9. 함수 기반 지식 표현
@@ -342,7 +342,7 @@ rule-based system (RBS)
 ![img](../assets/images/KnowledgeExpressionAndInference/42.PNG)
 
 ### 전향 추론
-![img](../assets/images/KnowledgeExpressionAndInference/43.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/43.png)
 전향추론은 어떤게 사실이다 아니다만 나타내는게 아니라 계산하고
 없애기도 하고.. 여러가지 일을 할 수있다
 1. 대상의 사실들을 가지고 그림 만들고
@@ -358,7 +358,7 @@ rule-based system (RBS)
 
 ### 규칙 기반 시스템 구조
 
-![img](../assets/images/KnowledgeExpressionAndInference/45.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/45.png)
 이러한 시스템 구조에 사용자는 규칙들과 사실들만 집어 넣어 규칙 기반 시스템을 사용할수있다.
 **경합 해소 전략**
 1. 규칙 우선 순위 : 우선순위가 높은 규칙을 먼저
@@ -371,7 +371,7 @@ rule-based system (RBS)
 사실 : 이름이 멍키인 원숭이가 나이가 세 살이고 거실에 있다.
 (monkey (name 멍키) (age 3) (room 거실))
 
-![img](../assets/images/KnowledgeExpressionAndInference/46.PNG)
+![img](../assets/images/KnowledgeExpressionAndInference/46.png)
 치타라는 이름의 원숭이를 age는 old라는 변수값으로 room은 where의 변수값 birthdate는 day변수값
 이러한 사실을 c라는 변수에 넣고 캘린더의 오늘 날짜를 day로.
 두 day가 같으므로 원숭이의 생일과 오늘 날짜가 같으면 old변수에 1을 더해 newage 값에 넣고
