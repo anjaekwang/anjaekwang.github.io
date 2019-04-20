@@ -9,7 +9,7 @@ category: blog
 author: jaekwang
 description: 지식표현과 추론 정리
 ---
-#지식표현
+# 지식표현
 ## 지식표현과 추론에 대한 용어 정리
 ![img](../assets/images/KnowledgeExpressionAndInference/1.PNG)
 
