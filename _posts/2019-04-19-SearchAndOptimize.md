@@ -1,5 +1,5 @@
 ---
-title: "탐색과 최적화"
+title: "[인공지능] 탐색과 최적화"
 layout: post
 date: 2019-04-19 20:00
 tag:

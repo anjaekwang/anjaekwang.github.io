@@ -1,5 +1,5 @@
 ---
-title: "기계 학습"
+title: "[인공지능] 기계 학습"
 layout: post
 date: 2019-04-21 01:52
 tag:

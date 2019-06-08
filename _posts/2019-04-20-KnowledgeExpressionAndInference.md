@@ -1,5 +1,5 @@
 ---
-title: "지식표현과 추론"
+title: "[인공지능] 지식표현과 추론"
 layout: post
 date: 2019-04-20 11:52
 tag:
