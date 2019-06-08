@@ -1,13 +1,13 @@
 ---
-title: "기계 학습"
+title: "딥러닝"
 layout: post
-date: 2019-04-21 01:52
+date: 2019-06-07 23:59
 tag:
 - AI
 - notes
 category: blog
 author: jaekwang
-description: 기계 학습 정리
+description: 딥러닝 정리
 ---
 # 기계 학습
 
