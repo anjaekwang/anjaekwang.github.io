@@ -10,7 +10,7 @@ author: jaekwang
 description: 데이터 분석 기초 함수
 ---
 
-**값은 무적권 인덱스로 접근**
+**값은 무조건 인덱스로 접근**
 
 # Numpy
 
