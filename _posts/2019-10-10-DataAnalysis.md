@@ -1,7 +1,7 @@
 ---
 title: "DataAnalysis cheat sheet"
 layout: post
-date: 2019-08-27 23:59
+date: 2019-10-10 23:59
 tag:
 - Data
 - notes
