@@ -528,3 +528,14 @@ cin과 cout은 매우 느려, count << << endl
 - 분할정복 같은 경우 재귀함수에서 모든 경우를 재귀시키지 말고 탐색할 필요 없는 부분은 재귀 안하게끔.
 
 - n중 루프를 사용안하고 빼낼 순 없는지?
+
+---
+# stl cheating sheet
+
+주로 내가 사용하는 api
+
+![img](../assets/images/algorithm(IM)/6.jpg)  
+
+![img](../assets/images/algorithm(IM)/7.jpg)  
+
+![img](../assets/images/algorithm(IM)/8.jpg)
