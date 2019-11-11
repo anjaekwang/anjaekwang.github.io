@@ -1,9 +1,8 @@
 ---
 title: "신입 프로그래머 기술 면접준비"
 layout: post
-date: 2018-11-10 18:06
+date: 2019-11-11 16:06
 tag:
-- python
 - notes
 category: blog
 author: jaekwang
