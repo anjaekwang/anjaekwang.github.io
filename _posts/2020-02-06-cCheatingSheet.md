@@ -1,5 +1,5 @@
 ---
-title: "[C] C++ STL Cheating Sheet"
+title: "[C] C++ STL Cheat Sheet"
 layout: post
 date: 2020-02-06 10:13
 tag:

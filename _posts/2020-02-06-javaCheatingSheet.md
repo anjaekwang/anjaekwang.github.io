@@ -1,5 +1,5 @@
 ---
-title: "[Java] Java Cheating Sheet"
+title: "[Java] Java Cheat Sheet"
 layout: post
 date: 2020-02-06 15:13
 tag:
